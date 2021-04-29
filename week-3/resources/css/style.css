@@ -1,5 +1,60 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  place-content: center;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+  background: #8ef089;
+  background: -webkit-linear-gradient(bottom right, #8ef089, #ff53cf);
+  background: -moz-linear-gradient(bottom right, #8ef089, #ff53cf);
+}
+
+input {
+  outline: none;
+  font-size: 0.95em;
+  text-align: center;
+  color: #793967;
+  font-weight: 700;
+  border: none;
+  border-radius: 45px;
+  height: 55px;
+  width: 50%;
+  min-width: 120px;
+  margin: 0.75em 1em;
+}
+
+input[type="submit"] {
+  color: white;
+  background: #a34d8b;
+}
+
+input[type="submit"]:hover {
+  background: #793967;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  form {
+    flex-direction: row;
+    max-width: 900px;
+  }
 }
